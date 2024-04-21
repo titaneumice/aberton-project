@@ -1,0 +1,99 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  color: rgb(189, 189, 189);
+  padding: 1rem;
+  margin: 0;
+}
+
+a {
+  color: rgb(189, 189, 189);
+}
+
+a:link {
+  color: rgb(189, 189, 189);
+}
+
+a:visited {
+  color: rgb(125, 125, 125);
+}
+
+#loadNew {
+  color: rgb(189, 189, 189);
+}
+
+.flexbox, .hFlex, #bannerTop, .statBox, #layer2, .vFlex, #insideFrame, #layer3, #bannerRight, #bannerLeft, #layer1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.vFlex, #insideFrame, #layer3, #bannerRight, #bannerLeft, #layer1 {
+  flex-direction: column;
+}
+
+.hFlex, #bannerTop, .statBox, #layer2 {
+  flex-direction: row;
+}
+
+#layer0 {
+  background-color: rgb(30, 30, 30);
+  background-image: url("/assets/watertile.jpg");
+  margin: 10px 100px 50px 100px;
+  border: 2px solid rgb(189, 189, 189);
+}
+
+#layer1 {
+  background-color: rgb(30, 30, 30);
+}
+
+#siteFooter {
+  padding: 2px 1em 2px 1em;
+  height: 1.2em;
+  border-top: 2px solid rgb(189, 189, 189);
+  color: rgb(189, 189, 189);
+}
+
+#bannerLeft {
+  width: 125px;
+  height: 625px;
+  padding: 0;
+  border-right: 2px solid rgb(189, 189, 189);
+}
+
+#bannerRight {
+  width: 250px;
+  border-left: 2px solid rgb(189, 189, 189);
+}
+
+#topRight {
+  border-bottom: 2px solid rgb(189, 189, 189);
+  min-height: 4rem;
+}
+
+#bottomRight {
+  flex-grow: 1;
+}
+
+#layer3 {
+  flex-grow: 1;
+}
+
+#bannerTop {
+  height: 200px;
+  width: 800px;
+  background-color: rgb(50, 50, 50);
+  border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+#mainContent {
+  flex-grow: 1;
+  border: none;
+}
+
+#insideFrame {
+  background-color: rgb(30, 30, 30);
+}
+
+/*# sourceMappingURL=styles.css.map */

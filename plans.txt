@@ -1,0 +1,24 @@
+1. how about every time a loop starts (on load or new game) warn players that reloading the page may lose progress?
+    see, im not actually sure how to prevent data loss at this point (especially if something - say Chrome for example
+    reload a page automatically for whatever reason)
+2. day begins. every time an action is chosen, it is locked in for a character and the player is PROMPTED
+    to select another character to act. this means i have to create a dialogue box, i think?
+        - need "hasActed" and "isAvailable" properties - isAvailable, when false, would prevent a character
+            from showing up in the prompt at all
+3. I need to check if what I do in the main iframe can effect anything in the main view, like, at all.
+    That's a big thing.
+        - do all of the banners need to be iframes for me to update them?
+            I can only think of, maybe, each iframe be caused to reload...
+
+pages:
+    newGame
+        start day loop, include Prologue, set parameters to starting parameters, new file class or something idk
+    loadIn
+        start day loop, loading save data
+        possibly load in at the correct time of day as well
+
+
+footer:
+    save and load from down here - generate game data into plain text and provide to player on save.
+    load in requires players pasting that plain text in.
+        potential issue: without any kind of secrecy, this could easily be used to cheat
